@@ -8,7 +8,7 @@ export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 mb-3 border-b-2 border-gray-100">
+      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 border-b-2 border-gray-100">
         <div className="container mx-auto flex flex-wrap items-center justify-between px-3">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
@@ -31,7 +31,7 @@ export default function Navbar() {
               (navbarOpen ? " flex" : " hidden")
             }
           >
-            <ul className="flex justify-center items-center flex-col lg:flex-row list-none lg:ml-auto gap-8 text-xl text-gray-500">
+            <ul className="flex justify-center items-center flex-col lg:flex-row list-none lg:ml-auto gap-8 text-xl text-[#667085] ">
               <li className=" hover:bg-gray-100 p-2 rounded-lg">
                 <FiBell />
               </li>

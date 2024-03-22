@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar";
+import SideBar from "@/components/sidebar";
 
 export default function AuthLayout({ children }) {
   const isAuth = true;
@@ -6,7 +7,10 @@ export default function AuthLayout({ children }) {
   return (
     <div>
       <Navbar />
-      {children}
+      <div className=" flex">
+        <SideBar />
+        {children}
+      </div>
     </div>
   );
 }
